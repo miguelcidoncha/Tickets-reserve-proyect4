@@ -59,3 +59,64 @@ header{
     margin-left: 35%;
     margin-top: 5%;
 }
+
+
+#section-form {
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-gap: 2%;
+}
+
+
+#title__form {
+    margin-top: auto;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.875rem;
+}
+
+form {
+    border: 1px black solid;
+    width: auto;
+    height: auto;
+    margin: 5%;
+    text-align: center;
+    padding: 2%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+#confirmation-box {
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    margin: 5%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.confirmacion-content {
+    padding: 2%;
+}
+
+.confirmacion-buttons {
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#confirmation-list {
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    margin: 2%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
