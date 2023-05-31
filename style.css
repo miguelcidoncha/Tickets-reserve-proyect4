@@ -165,3 +165,23 @@ form {
     padding: 2% 8% 0 0;
     text-align: center;
 }
+
+#twitter {
+    color: aqua;
+    font-size: 3.125rem;
+}
+
+#facebook {
+    color: blue;
+    font-size: 3.125rem;
+}
+
+#instagram {
+    color: pink;
+    font-size: 3.125rem;
+}
+
+#snapchat {
+    color: yellow;
+    font-size: 3.125rem;
+}
