@@ -120,3 +120,48 @@ form {
     grid-row-start: 2;
     grid-row-end: 3;
 }
+.container{
+    border: 1px solid black;
+    margin-left: 2%;
+    margin-top: 2%;
+    background: cornsilk;
+    margin-right: 2%;
+
+}
+.items-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.contacts{
+    width: 100%; 
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: large;
+}
+
+.text-one{
+    width: 200%;
+    height: 50px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.phone{
+    width: 25%;
+}
+
+.mail{
+    width: 15%;
+    height: 2%;
+}
+
+.social{
+    padding: 2% 8% 0 0;
+    text-align: center;
+}
