@@ -8,6 +8,7 @@
     <title>Resevas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
             <input type="email" id="email" name="email" required><br><br>
 
             <label for="price">Precio de la entrada:</label>
-            <select id="price" name="price">
+            <select id="price" name="price" onchange="calculatePrice ()">
                 <option value="35">Entrada Individual (35€)</option>
                 <option value="50">Entrada DUO (50€)</option>
                 <option value="25">Entrada Estudiante (25€)</option>
@@ -56,16 +57,16 @@
             </select><br><br>
 
             <label for="tickets">Número de entradas:</label>
-            <input type="number" id="tickets" name="tickets" min="1" required><br><br>
+            <input type="number" id="tickets" name="tickets" min="1" required onchange="calculatePrice ()"><br><br>
 
             <label for="children">Número de niños</label>
             <input type="number" id="children" name="children" min="0" required><br><br>
 
             <label for="adults">Número de Adultos</label>
-            <input type="number" id="adults" name="adults" min="1" required><br><br>
+            <input type="number" id="adults" name="adults" min="1" required onchange="calculatePrice ()"><br><br>
 
             <label for="restaurant">Restaurantes temáticos</label>
-            <select id="restaurant" name="restaurant">
+            <select id="restaurant" name="restaurant" onchange="calculatePrice ()">
                 <option value="15">Menú del día o temático (15€)</option>
                 <option value="10">Menú Infantil (10€)</option>
                 <option value="20">Buffet (20€)</option>
