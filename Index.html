@@ -42,7 +42,7 @@
                     <label for="phone">Teléfono de contacto:</label>
                     <input type="tel" id="phone" name="phone" required><br><br>
                     <label for="price">Precio de la entrada:</label>
-                    <select id="price" name="price">
+                    <select id="price" name="price" onchange="calculatePrice()">
                         <option value="35">Entrada Individual (35€)</option>
                         <option value="50">Entrada DUO (50€)</option>
                         <option value="25">Entrada Estudiante (25€)</option>
@@ -53,31 +53,34 @@
                         <option value="150">Hotel + Entrada + Pulsera (150€)</option>
                     </select><br><br>
                     <label for="tickets">Número de entradas:</label>
-                    <input type="number" id="tickets" name="tickets" min="1" required><br><br>
+                    <input type="number" id="tickets" name="tickets" min="1" required onchange="calculatePrice()"><br><br>
                     <label for="children">Número de niños</label>
-                    <input type="number" id="children" name="children" min="0" required><br><br>
+                    <input type="number" id="children" name="children" min="0" required onchange="calculatePrice()"><br><br>
                     <label for="adults">Número de Adultos</label>
                     <input type="number" id="adults" name="adults" min="1" required><br><br>
             </div>
             <div class="restaurant-data-box">
                 <h2>RESTAURANTES TEMÁTICOS:</h2>
                 <label for="today's menu">Menú del día o temático(15€)</label>
-                <input type="number" id="today's menu" name="today's menu" required><br><br>
+                <input type="number" id="today's menu" name="today's menu" required onchange="calculatePrice()">
+                <option value="15"></option>
                 <label for="Children's menu">Menú Infantil(10€)</label>
-                <input type="number" id="Children's menu" name="Children's menu" required><br><br>
+                <input type="number" id="Children's menu" name="Children's menu" required onchange="calculatePrice()">
+                <option value="10"></option>
                 <label for="buffet">Buffet(20€)</label>
-                <input type="number" id="buffet" name="buffet" required><br><br>
+                <input type="number" id="buffet" name="buffet" required onchange="calculatePrice()">
+                <option value="20"></option>
 
                 <h2>FECHAS DE RESERVA</h2>
                 <label for="start-date">Fecha de inicio:</label>
-                <input type="date" id="start-date" name="start-date" onchange="calcularDias()">
+                <input type="date" id="start-date" name="start-date">
                 <label for="end-date">Fecha de fin:</label>
-                <input type="date" id="end-date" name="end-date" onchange="calcularDias()"><br><br>
+                <input type="date" id="end-date" name="end-date"><br><br>
                 <label for="days">Días:</label>
-                <input type="number" id="days" name="days" required><br><br>
+                <input type="number" id="days" name="days" required onchange="calculatePrice()"><br><br>
             </div>
             <div class="total-box">
-                <label for="total">Precio final:</label>
+                <label for="total">Precio total:</label>
                 <input type="text" id="total" name="total" readonly><br><br>
                 <input type="submit" value="Enviar">
             </div>

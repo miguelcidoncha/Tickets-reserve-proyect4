@@ -68,8 +68,8 @@ header{
 #section-form {
     margin-top: 3%;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
     grid-gap: 1%;
 }
 
