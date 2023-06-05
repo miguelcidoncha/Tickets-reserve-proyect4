@@ -195,3 +195,7 @@ form {
     color: yellow;
     font-size: 3.125rem;
 }
+
+.error {
+    color: red;
+}
