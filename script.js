@@ -12,3 +12,10 @@ function calculatePrice() {
     });
     document.getElementById("total").value = totalFormat;
 }
+
+function validateForm () {
+    let nameInput = document.getElementById("name");
+    let nameValue = nameInput.value.trim();
+    let emailInput = document.getElementById("email");
+    let emailValue = emailInput.value.trim();
+}
