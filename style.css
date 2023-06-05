@@ -125,6 +125,8 @@ form {
     grid-row-end: 3;
 }
 .items-footer {
+    width: 101.52%;
+    margin: -1%;
     margin-top: 2%;
     text-align: center;
     background: cornsilk;
