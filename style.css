@@ -124,50 +124,35 @@ form {
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.container{
-    /* border: 1px solid black; */
-    margin-left: 2%;
+.items-footer {
     margin-top: 2%;
+    text-align: center;
     background: cornsilk;
-    margin-right: 2%;
-
+    flex-direction: row-reverse;
 }
-.items-footer{
+.img {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 2%;
-}
-.contacts{
-    width: 100%; 
-    height: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    font-size: large;
 }
 
-.text-one{
-    width: 200%;
-    height: 50px;
-    margin: auto;
-    margin-top: 2%;
+.img-donbosco {
+    margin-top: 20px;
 }
 
-.phone{
-    width: 25%;
+.img-factoria {
+    margin-top: 0%;
+}
+.img-cola{
+    margin-top: 1%;
 }
 
-.mail{
-    width: 15%;
-    height: 2%;
+.tex p{
+    font-size: 1.2rem;
 }
 
 .social{
-    padding: 2% 8% 0 0;
-    text-align: center;
+    margin-right: auto;
 }
 
 #twitter {
