@@ -33,7 +33,7 @@
     <section id="section-form">
         <form id="myForm" onsubmit="return validateForm()">
             <div class="reserve-box">
-                <h2 id="title__form">RESERVA DE ENTRADAS</h1>
+                <h2 class="title__form">RESERVA DE ENTRADAS</h1>
                     <label for="name">Nombre y Apellidos:</label>
                     <input type="text" id="name" name="name" required onchange="validateForm ()"><br>
                     <span id="name-error" class="error"></span><br>
@@ -61,7 +61,7 @@
                     <input type="number" id="adults" name="adults" min="1" required><br><br>
             </div>
             <div class="restaurant-data-box">
-                <h2>RESTAURANTES TEMÁTICOS:</h2>
+                <h2 class="title__form">RESTAURANTES TEMÁTICOS:</h2>
                 <label for="today's menu">Menú del día o temático(15€)</label>
                 <input type="number" id="today's menu" name="today's menu" min="0" required onchange="calculatePrice()">
                 <option value="15"></option>
@@ -72,7 +72,7 @@
                 <input type="number" id="buffet" name="buffet" min="0" required onchange="calculatePrice()">
                 <option value="20"></option>
 
-                <h2>FECHAS DE RESERVA</h2>
+                <h2 class="title__form">FECHAS DE RESERVA</h2>
                 <label for="startDate">Fecha de inicio:</label>
                 <input type="date" id="startDate" name="startDate">
                 <label for="endDate">Fecha de fin:</label>
@@ -81,9 +81,9 @@
                 <input type="number" id="days" name="days" required onchange="calculatePrice()"><br><br>
             </div>
             <div class="total-box">
-                <label for="total">Precio total:</label>
+                <label for="total">Precio total:</label><br>
                 <input type="text" id="total" name="total" readonly><br><br>
-                <input type="submit" value="Enviar" onclick="activateConfirmation(event)">
+                <input type="submit" class="button" value="Enviar" onclick="activateConfirmation(event)">
             </div>
             
         </form>

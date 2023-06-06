@@ -69,7 +69,7 @@ function activateConfirmation(event) {
     let confirmationBox = document.getElementById("confirmationBox");
     confirmationBox.innerHTML = `
       <div class="confirmacion-content">
-        <h2>Confirmación de reserva:</h2>
+      <h2 class="title__form">CONFIRMACIÓN DE RESERVA:</h2>
         <p>Nombre y apellidos: ${nameValue}</p>
         <p>Correo Electrónico: ${emailValue}</p>
         <p>Teléfono de contacto: ${phoneValue}</p>
@@ -78,7 +78,7 @@ function activateConfirmation(event) {
         <p>Fecha de fin: ${endDateValue}</p>
         <p>Total: ${totalValue}</p>
         <div class="confirmacion-buttons">
-        <button onclick="cancelarReserva()">Cancelar reserva</button>
+        <button class="button" onclick="cancelarReserva()">Cancelar reserva</button>
         <button class="confirmButton">Confirmar reserva</button>
       </div>
       </div>
