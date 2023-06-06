@@ -87,3 +87,8 @@ function activateConfirmation(event) {
     confirmarReservaButton.addEventListener("click", agregarConfirmacion);
 
 }
+
+function cancelarReserva() {
+    document.getElementById("myForm").reset();
+    document.getElementById("confirmationBox").innerHTML = "";
+}
