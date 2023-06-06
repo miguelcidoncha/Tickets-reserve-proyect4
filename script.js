@@ -62,6 +62,8 @@ function activateConfirmation(event) {
     let emailValue = document.getElementById("email").value;
     let phoneValue = document.getElementById("phone").value;
     let ticketsValue = document.getElementById("tickets").value;
+    let childrenValue = document.getElementById("children").value;
+    let adultsValue = document.getElementById("adults").value;
     let startDateValue = document.getElementById("startDate").value;
     let endDateValue = document.getElementById("endDate").value;
     let totalValue = document.getElementById("total").value;
@@ -74,6 +76,9 @@ function activateConfirmation(event) {
         <p>Correo Electrónico: ${emailValue}</p>
         <p>Teléfono de contacto: ${phoneValue}</p>
         <p>Número de entradas: ${ticketsValue}</p>
+        <p>Número de niños: ${childrenValue}</p>
+        <p>Número de adultos: ${adultsValue}</p>
+        <p>Restaurantes Temáticos: ${ticketsValue}</p>
         <p>Fecha de inicio: ${startDateValue}</p>
         <p>Fecha de fin: ${endDateValue}</p>
         <p>Total: ${totalValue}</p>
