@@ -76,9 +76,11 @@ header{
 
 form {
     border: 1px black solid;
+    border-radius: 6.25rem;
     width: auto;
     height: auto;
     margin: 5%;
+    background-color: white;
     text-align: center;
     padding: 2%;
     grid-column-start: 1;
@@ -90,33 +92,52 @@ form {
 }
 
 .reserve-box {
-    /* border: 1px solid black; */
     width: auto;
     height: auto;
     text-align: center;
 }
 
 .restaurant-data-box {
-    /* border: 1px solid black; */
     width: auto;
     height: auto;
     text-align: center;
 }
 
 .total-box {
-    /* border: 1px solid black; */
     width: auto;
     height: auto;
+    font-size: 1.25rem;
+    font-weight: bold;
     margin-bottom: 3%;
     margin-top: 5%;
     text-align: center;
 }
 
+.title__form {
+    color: rgb(0, 34, 228);
+    font-family: Cinzel;
+}
+
+.button {
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    background-color: aquamarine;
+}
+
+.confirmButton {
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    background-color: aquamarine;
+}
+
 #confirmationBox {
     border: 1px solid black;
+    border-radius: 6.25rem;
     width: auto;
     height: auto;
     margin: 5%;
+    padding: 8%;
+    background-color: white;
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 3;
