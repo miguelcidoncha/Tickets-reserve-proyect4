@@ -22,11 +22,11 @@ header{
 
 .images {
     width: 22%;
+    height: 9rem;
     margin-top: 1%;
     margin-left: 1%;
-    height: 9rem;
     background-image: url(Resources/Images/Logo\ con\ bandera\ \(1\).png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     
 }
@@ -112,7 +112,7 @@ form {
     text-align: center;
 }
 
-#confirmation-box {
+#confirmationBox {
     border: 1px solid black;
     width: auto;
     height: auto;

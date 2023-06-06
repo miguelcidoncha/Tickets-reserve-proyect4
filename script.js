@@ -55,3 +55,35 @@ function validateForm() {
 
     return validForm;
 }
+
+function activateConfirmation(event) {
+    event.preventDefault();
+    let nameValue = document.getElementById("name").value;
+    let emailValue = document.getElementById("email").value;
+    let phoneValue = document.getElementById("phone").value;
+    let ticketsValue = document.getElementById("tickets").value;
+    let startDateValue = document.getElementById("startDate").value;
+    let endDateValue = document.getElementById("endDate").value;
+    let totalValue = document.getElementById("total").value;
+
+    let confirmationBox = document.getElementById("confirmationBox");
+    confirmationBox.innerHTML = `
+      <div class="confirmacion-content">
+        <h2>Confirmación de reserva:</h2>
+        <p>Nombre y apellidos: ${nameValue}</p>
+        <p>Correo Electrónico: ${emailValue}</p>
+        <p>Teléfono de contacto: ${phoneValue}</p>
+        <p>Número de entradas: ${ticketsValue}</p>
+        <p>Fecha de inicio: ${startDateValue}</p>
+        <p>Fecha de fin: ${endDateValue}</p>
+        <p>Total: ${totalValue}</p>
+        <div class="confirmacion-buttons">
+        <button onclick="cancelarReserva()">Cancelar reserva</button>
+        <button class="confirmButton">Confirmar reserva</button>
+      </div>
+      </div>
+    `;
+    let confirmarReservaButton = document.querySelector(".confirm-button");
+    confirmarReservaButton.addEventListener("click", agregarConfirmacion);
+
+}

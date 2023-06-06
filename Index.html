@@ -63,31 +63,31 @@
             <div class="restaurant-data-box">
                 <h2>RESTAURANTES TEMÁTICOS:</h2>
                 <label for="today's menu">Menú del día o temático(15€)</label>
-                <input type="number" id="today's menu" name="today's menu" required onchange="calculatePrice()">
+                <input type="number" id="today's menu" name="today's menu" min="0" required onchange="calculatePrice()">
                 <option value="15"></option>
                 <label for="Children's menu">Menú Infantil(10€)</label>
-                <input type="number" id="Children's menu" name="Children's menu" required onchange="calculatePrice()">
+                <input type="number" id="Children's menu" name="Children's menu" min="0" required onchange="calculatePrice()">
                 <option value="10"></option>
                 <label for="buffet">Buffet(20€)</label>
-                <input type="number" id="buffet" name="buffet" required onchange="calculatePrice()">
+                <input type="number" id="buffet" name="buffet" min="0" required onchange="calculatePrice()">
                 <option value="20"></option>
 
                 <h2>FECHAS DE RESERVA</h2>
-                <label for="start-date">Fecha de inicio:</label>
-                <input type="date" id="start-date" name="start-date">
-                <label for="end-date">Fecha de fin:</label>
-                <input type="date" id="end-date" name="end-date"><br><br>
+                <label for="startDate">Fecha de inicio:</label>
+                <input type="date" id="startDate" name="startDate">
+                <label for="endDate">Fecha de fin:</label>
+                <input type="date" id="endDate" name="endDate"><br><br>
                 <label for="days">Días:</label>
                 <input type="number" id="days" name="days" required onchange="calculatePrice()"><br><br>
             </div>
             <div class="total-box">
                 <label for="total">Precio total:</label>
                 <input type="text" id="total" name="total" readonly><br><br>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" onclick="activateConfirmation(event)">
             </div>
         </form>
 
-        <div id="confirmation-box"></div>
+        <div id="confirmationBox"></div>
 
         <div id="confirmation-list"></div>
 
