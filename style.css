@@ -22,11 +22,11 @@ header{
 
 .images {
     width: 22%;
+    height: 9rem;
     margin-top: 1%;
     margin-left: 1%;
-    height: 9rem;
     background-image: url(Resources/Images/Logo\ con\ bandera\ \(1\).png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     
 }
@@ -66,20 +66,13 @@ header{
 
 
 #section-form {
-    margin-top: 15%;
+    margin-top: 3%;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(2, 2fr);
-    grid-gap: 2%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-gap: 1%;
 }
 
-
-#title__form {
-    margin-top: auto;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 1.875rem;
-}
 
 form {
     border: 1px black solid;
@@ -90,10 +83,36 @@ form {
     padding: 2%;
     grid-column-start: 1;
     grid-column-end: 2;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+.reserve-box {
+    /* border: 1px solid black; */
+    width: auto;
+    height: auto;
+    text-align: center;
+}
 
-#confirmation-box {
+.restaurant-data-box {
+    /* border: 1px solid black; */
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.total-box {
+    /* border: 1px solid black; */
+    width: auto;
+    height: auto;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#confirmationBox {
     border: 1px solid black;
     width: auto;
     height: auto;
@@ -189,4 +208,8 @@ form {
 #snapchat {
     color: yellow;
     font-size: 3.125rem;
+}
+
+.error {
+    color: red;
 }
