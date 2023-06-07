@@ -70,28 +70,28 @@ function submitForm() {
     let startDate = document.getElementById('startDate').value;
     let endDate = document.getElementById('endDate').value;
     let days = document.getElementById('days').value;
-  
+
     if (
-      name === '' ||
-      email === '' ||
-      phone === '' ||
-      tickets === '' ||
-      children === '' ||
-      adults === '' ||
-      todayMenu === '' ||
-      childrenMenu === '' ||
-      buffet === '' ||
-      startDate === '' ||
-      endDate === '' ||
-      days === ''
+        name === '' ||
+        email === '' ||
+        phone === '' ||
+        tickets === '' ||
+        children === '' ||
+        adults === '' ||
+        todayMenu === '' ||
+        childrenMenu === '' ||
+        buffet === '' ||
+        startDate === '' ||
+        endDate === '' ||
+        days === ''
     ) {
-      alert('Por favor, rellena todos los campos antes de enviar el formulario.');
-      return false;
+        alert('Por favor, rellena todos los campos antes de enviar el formulario.');
+        return false;
     }
-    
+
     activateConfirmation(event);
     return true;
-  }  
+}
 
 function activateConfirmation(event) {
 
@@ -147,8 +147,8 @@ function agregarConfirmacion() {
     let adultsValue = document.getElementById("adults").value;
     let startDateValue = document.getElementById("startDate").value;
     let endDateValue = document.getElementById("endDate").value;
-    
-    
+
+
     let days = document.getElementById("days").value;
     let restaurantValue = ticketsValue * days;
 
