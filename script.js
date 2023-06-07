@@ -107,6 +107,9 @@ function activateConfirmation(event) {
     let endDateValue = document.getElementById("endDate").value;
     let totalValue = document.getElementById("total").value;
 
+    let days = document.getElementById("days").value;
+    let restaurantValue = ticketsValue * days;
+
     let confirmationBox = document.getElementById("confirmationBox");
     confirmationBox.innerHTML =
         `
@@ -120,7 +123,7 @@ function activateConfirmation(event) {
         <p>Número de entradas: ${ticketsValue}</p>
         <p>Número de niños: ${childrenValue}</p>
         <p>Número de adultos: ${adultsValue}</p>
-        <p>Restaurantes Temáticos: ${ticketsValue}</p>
+        <p>Restaurantes Temáticos: ${restaurantValue}</p>
         <p>Fecha de inicio: ${startDateValue}</p>
         <p>Fecha de fin: ${endDateValue}</p>
         <p>Total: ${totalValue}</p>
@@ -144,6 +147,11 @@ function agregarConfirmacion() {
     let adultsValue = document.getElementById("adults").value;
     let startDateValue = document.getElementById("startDate").value;
     let endDateValue = document.getElementById("endDate").value;
+    
+    
+    let days = document.getElementById("days").value;
+    let restaurantValue = ticketsValue * days;
+
 
     let table = document.getElementById('table');
     let newRow = table.insertRow(table.rows.length);
@@ -164,7 +172,7 @@ function agregarConfirmacion() {
     cell5.innerHTML = childrenValue;
 
     let cell6 = newRow.insertCell(5);
-    cell6.innerHTML = ticketsValue;
+    cell6.innerHTML = restaurantValue;
 }
 
 function cancelarReserva() {
