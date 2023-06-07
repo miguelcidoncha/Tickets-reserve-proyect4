@@ -14,62 +14,42 @@
 <body>
 
     <header>
-
         <div class="images"></div>
-
         <div>
             <h1 class="box1">Bienvenidos</h1>
         </div>
 
         <div class="box2">
-
             <div class="text1">
-
                 <h1>
                     <strong>Reservas</strong>
                 </h1>
-
             </div>
 
             <div class="text2">
-
                 <p>
                     Compra tu entrada online y minimiza
                     tiempos de espera accede a tu compra
                     por esta taquilla especial.
                 </p>
-
             </div>
-
         </div>
-
     </header>
 
     <section id="section-form">
-
         <form id="myForm" onsubmit="return validateForm()">
-
             <div class="reserve-box">
-
                 <h2 class="title__form">RESERVA DE ENTRADAS</h2>
 
                 <label for="name">Nombre y Apellidos:</label>
-                <input type="text" id="name" name="name" required onchange="validateForm ()">
-
-                <br>
-
-                <span id="name-error" class="error"></span>
-
-                <br>
+                <input type="text" id="name" name="name" required onchange="validateForm ()"><br>
+                <span id="name-error" class="error"></span><br>
 
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required onchange="validateForm ()">
-                <br><br>
+                <input type="email" id="email" name="email" required onchange="validateForm ()"><br><br>
 
                 <label for="phone">Teléfono de contacto:</label>
-                <input type="tel" id="phone" name="phone" required onchange="validateForm ()">
-                <br>
-
+                <input type="tel" id="phone" name="phone" required onchange="validateForm ()"><br>
                 <span id="phone-error" class="error"></span><br>
 
                 <label for="price">Precio de la entrada:</label>
@@ -82,42 +62,43 @@
                     <option value="20">Entrada Atracciones (20€)* </option>
                     <option value="140">Hotel + Entrada (140€)</option>
                     <option value="150">Hotel + Entrada + Pulsera (150€)</option>
-                </select>
-                <br><br>
+                </select><br><br>
 
                 <label for="tickets">Número de entradas:</label>
-                <input type="number" id="tickets" name="tickets" min="1" required onchange="calculatePrice()">
-                <br><br>
+                <input type="number" id="tickets" name="tickets" min="1" required onchange="calculatePrice()"><br><br>
 
                 <label for="children">Número de niños</label>
-                <input type="number" id="children" name="children" min="0" required onchange="calculatePrice()">
-                <br><br>
+                <input type="number" id="children" name="children" min="0" required onchange="calculatePrice()"><br><br>
 
                 <label for="adults">Número de Adultos</label>
-                <input type="number" id="adults" name="adults" min="1" required>
-                <br><br>
+                <input type="number" id="adults" name="adults" min="1" required><br><br>
 
             </div>
 
             <div class="restaurant-data-box">
-
                 <h2 class="title__form">RESTAURANTES TEMÁTICOS:</h2>
+
                 <label for="today's menu">Menú del día o temático(15€)</label>
                 <input type="number" id="today's menu" name="today's menu" min="0" required onchange="calculatePrice()">
                 <option value="15"></option>
+
                 <label for="Children's menu">Menú Infantil(10€)</label>
                 <input type="number" id="Children's menu" name="Children's menu" min="0" required
                     onchange="calculatePrice()">
                 <option value="10"></option>
+
                 <label for="buffet">Buffet(20€)</label>
                 <input type="number" id="buffet" name="buffet" min="0" required onchange="calculatePrice()">
                 <option value="20"></option>
 
                 <h2 class="title__form">FECHAS DE RESERVA</h2>
+
                 <label for="startDate">Fecha de inicio:</label>
                 <input type="date" id="startDate" name="startDate">
+
                 <label for="endDate">Fecha de fin:</label>
                 <input type="date" id="endDate" name="endDate"><br><br>
+
                 <label for="days">Días:</label>
                 <input type="number" id="days" name="days" required onchange="calculatePrice()"><br><br>
 
@@ -126,34 +107,25 @@
             <div class="total-box">
                 <label for="total">Precio total:</label><br>
                 <input type="text" id="total" name="total" readonly><br><br>
-                <input type="submit" class="button" value="Enviar" onclick="activateConfirmation(event)">
+                <input type="submit" class="button" value="Enviar" onclick="return submitForm()">
             </div>
-
         </form>
 
         <div id="confirmationBox"></div>
 
         <div id="confirmation-list">
-
             <h1 class="title__form">LISTA FINAL DE RESERVAS</h1>
-
             <table id="table" frame="border" rules="none" class="tables">
-
                 <tr>
                     <th>Fecha de Reserva</th>
                     <th>Nombre y Apellidos</th>
-                    <th>Número de Entradas</th>>
+                    <th>Número de Entradas</th>
                     <th>Números de Adultos</th>
                     <th>Número de Niños(as)</th>
                     <th>Restaurante</th>
                 </tr>
-
             </table>
-
         </div>
-
-        </table>
-
     </section>
 
     <footer>
@@ -181,6 +153,8 @@
                     <i class="fa-brands fa-square-instagram" id="instagram"></i>
                     <i class="fa-brands fa-square-snapchat" id="snapchat"></i>
                 </div>
+            </div>
+        </div>
     </footer>
 
 </body>
