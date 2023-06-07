@@ -74,7 +74,7 @@ header{
     margin-top: 3%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-gap: 1%;
 }
 
@@ -83,7 +83,7 @@ form {
     /* border: 1px black solid; */
     border-radius: 6.25rem;
     width: auto;
-    height: auto;
+    /* height: auto; */
     margin: 5%;
     background-color: white;
     text-align: center;
@@ -98,13 +98,13 @@ form {
 
 .reserve-box {
     width: auto;
-    height: auto;
+    /* height: auto; */
     text-align: center;
 }
 
 .restaurant-data-box {
     width: auto;
-    height: auto;
+    /* height: auto; */
     text-align: center;
 }
 
