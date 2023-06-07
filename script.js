@@ -57,6 +57,42 @@ function validateForm() {
     return validForm;
 }
 
+function submitForm() {
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let phone = document.getElementById('phone').value;
+    let tickets = document.getElementById('tickets').value;
+    let children = document.getElementById('children').value;
+    let adults = document.getElementById('adults').value;
+    let todayMenu = document.getElementById("today's menu").value;
+    let childrenMenu = document.getElementById("Children's menu").value;
+    let buffet = document.getElementById('buffet').value;
+    let startDate = document.getElementById('startDate').value;
+    let endDate = document.getElementById('endDate').value;
+    let days = document.getElementById('days').value;
+  
+    if (
+      name === '' ||
+      email === '' ||
+      phone === '' ||
+      tickets === '' ||
+      children === '' ||
+      adults === '' ||
+      todayMenu === '' ||
+      childrenMenu === '' ||
+      buffet === '' ||
+      startDate === '' ||
+      endDate === '' ||
+      days === ''
+    ) {
+      alert('Por favor, rellena todos los campos antes de enviar el formulario.');
+      return false;
+    }
+    
+    activateConfirmation(event);
+    return true;
+  }  
+
 function activateConfirmation(event) {
 
     event.preventDefault();
@@ -109,25 +145,25 @@ function agregarConfirmacion() {
     let startDateValue = document.getElementById("startDate").value;
     let endDateValue = document.getElementById("endDate").value;
 
-    var table = document.getElementById('table');
-    var newRow = table.insertRow(table.rows.length);
+    let table = document.getElementById('table');
+    let newRow = table.insertRow(table.rows.length);
 
-    var cell1 = newRow.insertCell(0);
+    let cell1 = newRow.insertCell(0);
     cell1.innerHTML = "Inicio: " + startDateValue + " Fin: " + endDateValue;
 
-    var cell2 = newRow.insertCell(1);
+    let cell2 = newRow.insertCell(1);
     cell2.innerHTML = nameValue;
 
-    var cell3 = newRow.insertCell(2);
+    let cell3 = newRow.insertCell(2);
     cell3.innerHTML = ticketsValue;
 
-    var cell4 = newRow.insertCell(3);
+    let cell4 = newRow.insertCell(3);
     cell4.innerHTML = adultsValue;
 
-    var cell5 = newRow.insertCell(4);
+    let cell5 = newRow.insertCell(4);
     cell5.innerHTML = childrenValue;
 
-    var cell6 = newRow.insertCell(5);
+    let cell6 = newRow.insertCell(5);
     cell6.innerHTML = ticketsValue;
 }
 
