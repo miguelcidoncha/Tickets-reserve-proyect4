@@ -19,6 +19,7 @@ function calculatePrice() {
 
 
 function validateForm() {
+
     let nameInput = document.getElementById("name");
     let nameValue = nameInput.value.trim();
     let emailInput = document.getElementById("email");
@@ -57,7 +58,9 @@ function validateForm() {
 }
 
 function activateConfirmation(event) {
+
     event.preventDefault();
+
     let nameValue = document.getElementById("name").value;
     let emailValue = document.getElementById("email").value;
     let phoneValue = document.getElementById("phone").value;
@@ -69,9 +72,12 @@ function activateConfirmation(event) {
     let totalValue = document.getElementById("total").value;
 
     let confirmationBox = document.getElementById("confirmationBox");
-    confirmationBox.innerHTML = `
+    confirmationBox.innerHTML =
+        `
       <div class="confirmacion-content">
+
       <h2 class="title__form">CONFIRMACIÓN DE RESERVA:</h2>
+
         <p>Nombre y apellidos: ${nameValue}</p>
         <p>Correo Electrónico: ${emailValue}</p>
         <p>Teléfono de contacto: ${phoneValue}</p>
@@ -82,15 +88,47 @@ function activateConfirmation(event) {
         <p>Fecha de inicio: ${startDateValue}</p>
         <p>Fecha de fin: ${endDateValue}</p>
         <p>Total: ${totalValue}</p>
+
         <div class="confirmacion-buttons">
+
         <button class="button" onclick="cancelarReserva()">Cancelar reserva</button>
-        <button class="confirmButton">Confirmar reserva</button>
-      </div>
+        <button id="confirmButton" class="confirmButton" onclick="agregarConfirmacion()">Confirmar reserva</button>
+
+        </div>
       </div>
     `;
-    let confirmarReservaButton = document.querySelector(".confirm-button");
-    confirmarReservaButton.addEventListener("click", agregarConfirmacion);
 
+}
+
+function agregarConfirmacion() {
+
+    let nameValue = document.getElementById("name").value;
+    let ticketsValue = document.getElementById("tickets").value;
+    let childrenValue = document.getElementById("children").value;
+    let adultsValue = document.getElementById("adults").value;
+    let startDateValue = document.getElementById("startDate").value;
+    let endDateValue = document.getElementById("endDate").value;
+
+    var table = document.getElementById('table');
+    var newRow = table.insertRow(table.rows.length);
+
+    var cell1 = newRow.insertCell(0);
+    cell1.innerHTML = "Inicio: " + startDateValue + " Fin: " + endDateValue;
+
+    var cell2 = newRow.insertCell(1);
+    cell2.innerHTML = nameValue;
+
+    var cell3 = newRow.insertCell(2);
+    cell3.innerHTML = ticketsValue;
+
+    var cell4 = newRow.insertCell(3);
+    cell4.innerHTML = adultsValue;
+
+    var cell5 = newRow.insertCell(4);
+    cell5.innerHTML = childrenValue;
+
+    var cell6 = newRow.insertCell(5);
+    cell6.innerHTML = ticketsValue;
 }
 
 function cancelarReserva() {
