@@ -9,10 +9,10 @@ body{
 
 header{
     width: 101.4%;
-    height: 250%;
+    height: auto;
     margin: -1%;
     background-image: url(Resources/Images/Sin\ título2.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     font-family: Cinzel;
     color: rgb(255, 255, 255);
@@ -22,7 +22,7 @@ header{
 
 .images {
     width: 22%;
-    height: 9rem;
+    height: auto;
     margin-top: 1%;
     margin-left: 1%;
     background-image: url(Resources/Images/Logo\ con\ bandera\ \(1\).png);
@@ -34,14 +34,16 @@ header{
 .box1{
     width: 100%;
     height: 20%;
+    margin: auto;
     position: relative;
-    top: 70%;
+    top: 78%;
     right: 30%;
 }
 
 .box2{
     width: 170%;
     height: 270%;
+    margin: auto;
     position: relative;
     right: 3%;
       
@@ -49,11 +51,13 @@ header{
 
 .text1{
     width: 15%;
+    margin: auto;
     margin-left: 33%;
 }
 
 .text2{
     width: 65%;
+    margin: auto;
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 2rem;
     font-size: x-large;
@@ -61,11 +65,12 @@ header{
     text-align: end;
     text-align: center;
     margin-left: 35%;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 
 #section-form {
+    width: auto;
     margin-top: 3%;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -75,7 +80,7 @@ header{
 
 
 form {
-    border: 1px black solid;
+    /* border: 1px black solid; */
     border-radius: 6.25rem;
     width: auto;
     height: auto;
@@ -114,24 +119,27 @@ form {
 }
 
 .title__form {
+    width: auto;
     color: rgb(0, 34, 228);
     font-family: Cinzel;
 }
 
 .button {
+    width: auto;
     border-radius: 1.5625rem;
     font-size: 1.25rem;
     background-color: aquamarine;
 }
 
 .confirmButton {
+    width: auto;
     border-radius: 1.5625rem;
     font-size: 1.25rem;
     background-color: aquamarine;
 }
 
 #confirmationBox {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 6.25rem;
     width: auto;
     height: auto;
@@ -145,17 +153,19 @@ form {
 }
 
 .confirmacion-content {
+    width: auto;
     padding: 2%;
 }
 
 .confirmacion-buttons {
+    width: auto;
     margin-top: 7%;
     display: flex;
     justify-content: space-around;
 }
 
 #confirmation-list {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: auto;
     height: auto;
     margin: 2%;
@@ -171,7 +181,7 @@ form {
 .tables{
     width: 80%;
     margin-left: 10%;
-    margin-right: 100px;  
+    margin-right: 100%;  
 
 }
 
@@ -185,49 +195,69 @@ form {
 }
 .img {
     width: 100%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
 }
 
 .img-donbosco {
-    margin-top: 20px;
+    width: auto;
+    margin: auto;
+    margin-top: 1.3%;
 }
 
 .img-factoria {
+    width: auto;
+    margin: auto;
     margin-top: 0%;
 }
 .img-cola{
-    margin-top: 1%;
+    width: auto;
+    margin: auto;
+    margin-top: 0.7%;
 }
 
 .tex p{
+    width: auto;
+    margin: auto;
     font-size: 1.2rem;
 }
 
 .social{
+    width: auto;
     margin-right: auto;
 }
 
 #twitter {
+    width: auto;
+    margin: auto;
     color: aqua;
     font-size: 3.125rem;
 }
 
 #facebook {
+    width: auto;
+    margin: auto;
     color: blue;
     font-size: 3.125rem;
 }
 
 #instagram {
+    width: auto;
+    margin: auto;
     color: deeppink;
     font-size: 3.125rem;
 }
 
 #snapchat {
+    width: auto;
+    margin: auto;
     color: yellow;
     font-size: 3.125rem;
 }
 
 .error {
+    width: auto;
+    margin: auto;
     color: red;
 }
