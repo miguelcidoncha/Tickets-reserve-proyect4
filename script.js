@@ -178,11 +178,17 @@ function agregarConfirmacion() {
     let cell7 = newRow.insertCell(6);
     cell7.innerHTML = totalValue;
 
+    let cell8 = newRow.insertCell(7);
+    cell8.innerHTML = '<button onclick="deleteLine(this)">Eliminar</button>';
+
     totalPay();
 
 }
 
-
+function deleteLine(boton) {
+    var fila = boton.parentNode.parentNode;
+    fila.remove();
+}
 
 function cancelarReserva() {
     document.getElementById("myForm").reset();
