@@ -89,7 +89,7 @@ function submitForm() {
         return false;
     }
 
-    activateConfirmation(event);
+    activateConfirmation(event); totalPay();
     return true;
 }
 
@@ -147,6 +147,7 @@ function agregarConfirmacion() {
     let adultsValue = document.getElementById("adults").value;
     let startDateValue = document.getElementById("startDate").value;
     let endDateValue = document.getElementById("endDate").value;
+    let totalValue = document.getElementById("total").value;
 
 
     let days = document.getElementById("days").value;
@@ -173,9 +174,33 @@ function agregarConfirmacion() {
 
     let cell6 = newRow.insertCell(5);
     cell6.innerHTML = restaurantValue;
+
+    let cell7 = newRow.insertCell(6);
+    cell7.innerHTML = totalValue;
+
+    totalPay();
+
 }
+
+
 
 function cancelarReserva() {
     document.getElementById("myForm").reset();
     document.getElementById("confirmationBox").innerHTML = "";
+}
+
+function totalPay() {
+    let table = document.getElementById('table');
+    let total = 0;
+
+    for (let i = 1; i < table.rows.length; i++) {
+        let price = parseFloat(table.rows[i].cells[6].innerHTML);
+
+        if (!isNaN(price)) {
+            total += price;
+        }
+    }
+
+    let totalPayHeader = document.getElementById('totalPayHeader');
+    totalPayHeader.innerHTML = "Precio total a pagar: " + total.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' });
 }
