@@ -146,8 +146,6 @@ function cancelarReserva() {
 
 function agregarConfirmacion() {
 
-    let cont = 0;
-
     let nameValue = document.getElementById("name").value;
     let ticketsValue = document.getElementById("tickets").value;
     let childrenValue = document.getElementById("children").value;
