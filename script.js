@@ -139,7 +139,14 @@ function activateConfirmation(event) {
 
 }
 
+function cancelarReserva() {
+    document.getElementById("myForm").reset();
+    document.getElementById("confirmationBox").innerHTML = "";
+}
+
 function agregarConfirmacion() {
+
+    let cont = 0;
 
     let nameValue = document.getElementById("name").value;
     let ticketsValue = document.getElementById("tickets").value;
@@ -185,16 +192,6 @@ function agregarConfirmacion() {
 
 }
 
-function deleteLine(boton) {
-    var fila = boton.parentNode.parentNode;
-    fila.remove();
-}
-
-function cancelarReserva() {
-    document.getElementById("myForm").reset();
-    document.getElementById("confirmationBox").innerHTML = "";
-}
-
 function totalPay() {
     let table = document.getElementById('table');
     let total = 0;
@@ -209,4 +206,11 @@ function totalPay() {
 
     let totalPayHeader = document.getElementById('totalPayHeader');
     totalPayHeader.innerHTML = "Precio total a pagar: " + total.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' });
+}
+
+function deleteLine(boton) {
+    let fila = boton.parentNode.parentNode;
+
+    fila.remove();
+    totalPay();
 }
